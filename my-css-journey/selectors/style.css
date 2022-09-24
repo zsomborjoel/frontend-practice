@@ -1,0 +1,67 @@
+/* 
+Works like a waterfall. The last one works and overwrites 
+
+Child elements inherits from parent element
+
+element -> class -> id
+
+specificity calculator
+*/
+
+
+/*one per page*/
+body {
+    font-size: 22px;
+}
+
+/*one per page*/
+main {
+    font-family: monospace;
+}
+
+/* these element inherit now font settings*/
+button, input, textarea, select {
+    font: inherit;
+}
+
+/*rules applies on both*/
+h1, h2 {
+    color: blue
+}
+
+/*rules applies on h2 nested in h1*/
+h1 h2 {
+    color: blue
+}
+
+/*tag specific*/
+p {
+    color: purple;
+}
+
+/*overwrites previous p*/
+p {
+    color: red;
+}
+
+/*rules applies on span nested in p*/
+p span {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+/*better use id make it reusable*/
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+/*class selector*/
+.gray {
+    color: gray;
+}
+
+/*id selector - should be unique*/
+#second {
+    font-style: italic;
+}
