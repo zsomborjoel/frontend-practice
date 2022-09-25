@@ -1,0 +1,15 @@
+/*
+External fonts
+
+fonts.google.com
+*/
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}
