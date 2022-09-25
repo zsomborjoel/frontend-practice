@@ -1,0 +1,31 @@
+/*
+Most used px <pixel>
+
+<percentage> %
+2 <rem> = 32px
+<ch> - based on 0 size
+*/
+
+/* 
+Only using 80% of 50%
+
+header {
+    width: 80%;
+}
+
+h1 {
+    width: 50%;
+}
+*/
+
+h1 {
+    border: 2px dashed blueviolet;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+p {
+    font-size: 2em;
+    width: 40ch;
+}
