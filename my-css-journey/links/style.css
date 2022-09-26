@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+removing underline
+    text-decoration: none;
+
+changing cursor when hoover over link
+
+changling link color possible
+1) visited
+2) hover
+3) active
+
+order the is required
+*/
+a {
+    text-decoration: none;
+    cursor: zoom-in;
+    color: goldenrod;
+}
+
+a:visited {
+    color: aquamarine;
+}
+
+a:hover, a:focus {
+    color: aqua;
+}
+
+a:active {
+    color: red;
+}
