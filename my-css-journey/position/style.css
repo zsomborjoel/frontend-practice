@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  min-height: 200vh;
+}
+
+/*
+parent element of absolute
+as   position: relative;
+
+now its relative here
+*/
+.outer-container {
+  border: 3px dashed #000;
+  width: 75vw;
+  height: 85vh;
+  margin: 40px auto;
+  position: relative;
+}
+
+/*
+parent element of absolute
+as   position: relative;
+
+now its relative here and overwrites previus parent
+*/
+.inner-container {
+  border: 2px solid #00f;
+  width: 40vw;
+  height: 50vh;
+  margin: 200px auto;
+  /*position: relative;*/
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  padding: 1rem;
+}
+
+/*
+started here
+*/
+
+/*
+absolute position need to work with top/right/left/bottom
+
+absolute positing needs a relative parent
+if it doesn't have relative parent 
+takes initial boundry which is browser windows 
+
+absolue does not take up space
+
+TRICK: 
+disapear element but be accessable
+    position: absolute;
+    left: 0;
+    left: -10000px;
+
+*/
+.absolute {
+    background-color: #00f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /*makes appear before other element*/
+}
+
+/*
+relative does not take up space
+*/
+.relative {
+    background-color: rebeccapurple;
+    position: relative;
+    top: 300px;
+    left: 100px;
+}
+
+/*moves with scroll bar*/
+.fixed {
+    background-color: green;
+    position: fixed;
+    top: 100px;
+}
+
+/*
+stays in the container
+*/
+.sticky {
+    background-color: #000;
+    position: sticky;
+    top: 0;
+}
