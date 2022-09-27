@@ -33,7 +33,30 @@ ul {
 
 /*
 overwrites all list
-*/
+
 li {
     color: rebeccapurple;
 }
+*/
+
+/*
+nth item overwrite
+- odd
+- even
+
+ul li:nth-child(2) {
+    color: red;
+}
+*/
+
+/* sudo element ::
+applies for all list
+
+using ul :: just for ul
+
+ul ::marker {
+    color: red;
+    font-family: fantasy;
+    font-size: 1em;
+    contet: "SALE >> "
+*/
